@@ -1,0 +1,9 @@
+{
+  "locale": "es",
+  "note": "must-translate keys that the LLM left in English after retry; require human/agent handling",
+  "untranslated": {
+    "category_feature_editions-preorder_html": "<table><thead><tr><th>Option</th><th>Status</th><th>What You Get</th></tr></thead><tbody><tr><td>Pre-Order Bonus</td><td><span class=\"badge badge-active\">Active</span></td><td>Alucard Style costume for early buyers on all platforms</td></tr><tr><td>Standard Edition</td><td><span class=\"badge badge-a\">Base</span></td><td>The complete Castlevania: Belmont's Curse campaign</td></tr><tr><td>Midnight Edition</td><td><span class=\"badge badge-s\">Premium</span></td><td>Full game plus Digital Sound &amp; Art Gallery plus three in-game bonuses</td></tr><tr><td>Platforms</td><td><span class=\"badge badge-b\">Matrix</span></td><td>PC, PS5, Switch, Xbox Series X|S — 60 FPS target on PS5 and PC</td></tr></tbody></table>",
+    "edition_midnight_badge": "Premium",
+    "category_cards_editions-preorder_2_badge": "Premium"
+  }
+}

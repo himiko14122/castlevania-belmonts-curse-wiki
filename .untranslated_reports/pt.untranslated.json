@@ -1,0 +1,8 @@
+{
+  "locale": "pt",
+  "note": "must-translate keys that the LLM left in English after retry; require human/agent handling",
+  "untranslated": {
+    "edition_midnight_badge": "Premium",
+    "category_cards_editions-preorder_2_badge": "Premium"
+  }
+}

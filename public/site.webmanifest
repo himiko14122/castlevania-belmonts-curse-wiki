@@ -1,0 +1,13 @@
+{
+  "name": "Castlevania: Belmont's Curse Wiki",
+  "short_name": "Castlevania: Belmont's Curse",
+  "description": "Complete wiki for Castlevania: Belmont's Curse — whip combat, Arcana card builds, boss strategies and 1499 Paris map guides.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#12101c",
+  "theme_color": "#e63946",
+  "icons": [
+    { "src": "/favicon-96x96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

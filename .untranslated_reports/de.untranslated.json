@@ -1,0 +1,21 @@
+{
+  "locale": "de",
+  "note": "must-translate keys that the LLM left in English after retry; require human/agent handling",
+  "untranslated": {
+    "section_faq": "FAQ",
+    "theme_system": "System",
+    "home_info_genre": "Genre",
+    "footer_community": "Community",
+    "home_boss_name": "Boss",
+    "weapon_arcanaCombos_badge": "System",
+    "edition_midnight_badge": "Premium",
+    "edition_preorder_f0_label": "Bonus",
+    "category_cards_weapons_2_badge": "System",
+    "category_cards_secrets-collectibles_3_badge": "Community",
+    "category_cards_editions-preorder_2_badge": "Premium",
+    "category_cards_relics_2_name": "Family's Grace",
+    "category_stat_relics_2_value": "Family's Grace",
+    "category_cards_bosses_2_badge": "epic",
+    "category_cards_bosses_4_badge": "epic"
+  }
+}

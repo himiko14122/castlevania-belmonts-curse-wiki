@@ -1,0 +1,187 @@
+export const metadata = {
+    id: "belmont-s-curse-joan-of-arc-strategy",
+    slug: "belmont-s-curse-joan-of-arc-strategy",
+    order: 4,
+    difficulty: "advanced",
+    title: "Castlevania: Belmont's Curse Estratégia de Joana d'Arc e Fases",
+    description: "Domine a estratégia de Joana d'Arc em Castlevania: Belmont's Curse com sinais de fúria, janelas de vulnerabilidade e timing de aparar para o teste mais difícil de Rose.",
+    keywords: ["estratégia de joana d'arc em belmont's curse", "timing de aparar de chefe em belmont's curse", "guia de esquiva de chefe em belmont's curse", "fase de fúria de chefe em belmont's curse", "janela de vulnerabilidade de chefe em belmont's curse", "tier list de chefes de belmont's curse"],
+    image: "/images/bosses/ibRD7Yd3CPI.webp",
+    video: "ibRD7Yd3CPI",
+    category: "bosses",
+    date: "2026-09-04",
+    lastModified: "2026-09-04"
+}
+
+## Por Que Joana d'Arc É o Obstáculo Obrigatório Mais Difícil de Rose em Belmont's Curse
+
+Joana d'Arc é a santa transformada em sentinela opcional que bloqueia a progressão de fim de jogo de Rose Belmont, e seu confronto pune os mesmos hábitos descuidados que te carregaram contra Death e Medusa. De acordo com a [página oficial de Castlevania: Belmont's Curse na Steam](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/), o título de ação e exploração 2D da Konami, Evil Empire e Motion Twin adiciona uma escalada de três fases a cada inimigo "sagrado", então a luta contra Joana d'Arc parece menos um teste de atributos e mais um exame de timing. Jogadores que já limparam [a lista mais ampla de chefes de Castlevania: Belmont's Curse](/en/bosses/castlevania-belmont-s-curse-bosses/) sabem que a curva fica íngreme por volta da Catedral da Chama, e Joana d'Arc é o ponto de verificação que decide se sua build sobrevive à metade final da rota.
+
+Este guia detalha seus scripts de ataque, suas animações de sinal, as janelas de aparar que realmente te recompensam com uma abertura de vulnerabilidade, e a configuração de Arcana que transforma uma maratona de dez mortes em uma limpeza limpa de três ciclos. A luta combina leituras de aparar precisas com quebra-cabeças de posicionamento, e a fase de fúria reembaralha todo o padrão, então entrar com memória muscular de Carmilla vai te matar.
+
+## Visão Geral de Joana d'Arc, Contexto de Lore e Mapa de Fases
+
+Joana d'Arc é uma das chefes opcionais nomeadas listadas em [o elenco de chefes opcionais de Castlevania: Belmont's Curse](/en/bosses/castlevania-belmont-s-curse-optional-bosses/), posicionada ao lado de Isaac e The Fallen como um teste de fim de jogo. Sua arena é uma nave de catedral longa e plana com três plataformas elevadas e um piso santificado que brilha mais forte conforme sua vida diminui, sinalizando a fase de fúria que se aproxima. A luta ocorre em três fases distintas, cada uma com seu próprio conjunto de ataques, e a janela de vulnerabilidade encolhe a cada ciclo se você errar seus aparos.
+
+### Fase 1 — Vanguarda Santificada (100% a 66% de PV)
+
+A fase inicial é construída em torno de varreduras horizontais amplas, estocadas verticais lentas e um arremesso de lança do tamanho da tela que te ensina o timing de seu movimento de preparação. Joana d'Arc abre cada combo com uma inclinação de ombro de meio segundo, e essa inclinação é o único sinal que você recebe para a primeira janela de vulnerabilidade. Testes da comunidade compartilhados no Discord de acesso antecipado relatam uma janela de aparar consistente de 7 frames após a inclinação de ombro, o que coincide com os dados de frames que os jogadores extraíram do boneco de aparar na sala de treino.
+
+| Ataque da Fase 1 | Sinal de Preparação | Frames Ativos | Janela de Aparar | Esquiva Recomendada |
+|----------------|--------------|---------------|--------------|-------------------|
+| Varredura Horizontal | Inclinação de ombro, arma recua 90° | 18 | 7 | Esquiva para trás e então puna |
+| Estocada Vertical | Arma erguida acima da cabeça, postura se alarga | 22 | 6 | Passo lateral e puna com o chicote |
+| Arremesso de Lança | Braço recua para trás, brilha em branco | 30 | 4 | Agache sob o arco, retorne com a cruz |
+| Pulso Sagrado | Pisa uma vez, anel se expande para fora | 14 | 0 (inaparável) | Pule sobre o anel |
+| Golpe de Investida | Agacha baixo, desliza 3 tiles | 20 | 5 | Esquiva para trás × 2, espere a recuperação |
+
+O Pulso Sagrado é o único ataque que você não pode aparar na fase 1, e é o primeiro teste real de esquiva da luta. Trate-o como um reset de posicionamento — a hitbox do anel tem exatamente dois tiles, então um único pulo da plataforma central o limpa limpo. De acordo com dados da comunidade coletados durante o recente branch beta, jogadores que morrem primeiro nesta fase quase sempre perdem para o arremesso de lança porque tentaram aparar uma janela de 4 frames sem antes bufferizar a entrada no sinal.
+
+### Fase 2 — Chama Purificadora (66% a 33% de PV)
+
+Assim que Joana d'Arc atinge 66% de PV, os tiles do piso se incendeiam, e a arena ganha um campo de dano ao longo do tempo que causa dano uma vez por segundo. Seu conjunto de ataques se expande com dois novos movimentos — uma coluna de chama em sua posição e uma onda de solo consagrado varrendo — e suas janelas de aparar ficam 2 frames mais apertadas em geral. A nova janela de vulnerabilidade após um aparar bem-sucedido cresce de 12 frames para 18 frames porque a equipe de desenvolvimento queria que a segunda fase recompensasse agressividade comprometida, mas apenas se você conseguir sobreviver ao dano do piso.
+
+A mecânica nova mais importante na fase 2 é o reset da janela de vulnerabilidade. Quando você aparar um golpe de coluna de chama, Joana d'Arc fica travada em um atordoamento de 24 frames que pode encadear em um ataque pesado gratuito do Vampire Killer de Rose. O pesado em pé do chicote erra se você estiver perto demais, então a punição ideal é um único pesado cancelado por pulo que atinge no alcance máximo, o que alinha o segundo golpe com o último frame do atordoamento.
+
+### Fase 3 — Fúria do Martírio (33% de PV e Abaixo)
+
+A fase de fúria é o teste real do seu plano de fase de fúria de chefe em belmont's curse. A 33% de PV, Joana d'Arc brilha em dourado, seus sinais desaparecem no primeiro ataque de cada combo, e ela ganha uma nova sagrada que limpa toda a arena a cada 45 segundos. A nova sagrada é anunciada por um único som de sino, então o uso de pistas de áudio é obrigatório. A janela de vulnerabilidade após um aparar na fase 3 volta para 12 frames, mas a animação de atordoamento é mais curta, então você recebe exatamente um ataque leve gratuito antes de precisar resetar o posicionamento.
+
+A regra crítica de sobrevivência para a fase de fúria é o timing. O tempo de recarga de 45 segundos da nova significa que você tem espaço para dois ciclos completos de ataque entre cada explosão, o que é suficiente para reduzir a vida dela se você estiver acertando os aparos. Jogadores que ignoram o timer e se estendem demais recebem a nova com PV cheio e perdem a run.
+
+## Timing de Aparar e Leituras de Esquiva para Cada Ataque de Joana d'Arc
+
+O timing de aparar para Joana d'Arc é construído em torno de suas quebras de postura, e a janela é sempre a mesma independentemente de qual ataque se segue. Contanto que você leia a inclinação de ombro corretamente, uma entrada de aparar bufferizada vai pegar os frames ativos. Testes da comunidade confirmam que a janela de buffer de entrada é de 9 frames, o que te dá uma pequena margem para latência se você estiver jogando online ou fazendo streaming via remote play.
+
+### Tabela de Referência de Timing de Aparar
+
+| Tipo de Ataque | Fase Disponível | Buffer de Entrada de Aparar | Recuperação Após Aparar | Janela de Dano de Punição |
+|-------------|-----------------|--------------------|-----------------------|-----------------------|
+| Ataques de varredura | 1, 2, 3 | 9 frames antes do impacto | 14 frames | Vulnerabilidade de 12 frames |
+| Ataques de estocada | 1, 2, 3 | 7 frames antes do impacto | 12 frames | Vulnerabilidade de 10 frames |
+| Arremesso de lança | 1, 2 | 5 frames antes do impacto | 10 frames | Vulnerabilidade de 8 frames |
+| Coluna de chama | 2, 3 | 6 frames antes do impacto | 24 frames | Vulnerabilidade de 18 frames |
+| Golpe de investida | 1, 2, 3 | 8 frames antes do impacto | 16 frames | Vulnerabilidade de 14 frames |
+| Nova sagrada | 3 (fúria) | Inaparável | N/A | Esquive para a zona segura |
+
+Para a abordagem de treino de [timing de aparar de chefe em belmont's curse](/en/bosses/how-to-beat-joan-of-arc-belmont-s-curse/), o boneco de aparar no vestíbulo da Catedral apenas imita o timing da varredura, então é útil para aquecer, mas não te prepara para o arremesso de lança. O arremesso de lança tem uma preparação única em que Joana recua o braço todo para trás e a lança brilha em branco, e a janela de aparar de 4 frames é a mais apertada do jogo fora do combo em cadeia de Carmilla.
+
+### Guia de Esquiva para Ataques Inaparáveis
+
+Dois ataques na luta contra Joana d'Arc não podem ser aparados, e a abordagem do [guia de esquiva de chefe em belmont's curse](/en/bosses/castlevania-belmont-s-curse-bosses/) é construída em torno de áudio e posicionamento em vez de tempo de reação. O Pulso Sagrado na fase 1 é um anel de chão que requer um único pulo da plataforma central. A nova sagrada na fase 3 é uma explosão de tela cheia que você esquiva correndo para a plataforma de canto mais distante de Joana, que é a única zona segura porque a explosão se expande a partir da posição dela.
+
+| Movimento Inaparável | Fase | Método de Esquiva | Zona Segura |
+|------------------|-------|--------------|-----------|
+| Pulso Sagrado | 1, 2 | Pulo único do centro | Qualquer lugar acima do nível do chão |
+| Nova Sagrada | 3 | Corra para a plataforma de canto distante | Canto mais distante da chefe |
+| Cutscene de transição de fase | 1→2, 2→3 | Janela de cura gratuita | Atrás do pilar (sem dano) |
+
+As cutscenes de transição de fase são janelas de cura gratuitas, e jogadores habilidosos as usam para se recuperar com uma única carga de Arcana. De acordo com a [entrada da Wikipédia sobre Castlevania: Belmont's Curse](https://en.wikipedia.org/wiki/Castlevania:_Belmont%27s_Curse), o kit de ferramentas de Rose é construído em torno de encadear rajadas de Arcana em combos de chicote, então a janela de transição é a oportunidade mais limpa para renovar sua Arcana ativa antes que a pressão da próxima fase aumente.
+
+## Configuração de Arcana, Escolha de Arma e Preparação Pré-Luta
+
+A melhor build para Joana d'Arc é uma configuração focada em aparar que maximiza seu dano de punição de atordoamento. A [tier list de Arcana de Castlevania: Belmont's Curse](/en/arcana/castlevania-belmont-s-curse-boss-arcana/) recomenda combinar uma Arcana de dano com uma defensiva, porque a fase de fúria vai drenar seus recursos de cura se você jogar puramente ofensivamente.
+
+| Slot de Arcana | Carta Recomendada | Efeito na Luta contra Joana d'Arc |
+|-------------|------------------|------------------------------|
+| Primária | A Torre | +20% de dano a chefes atordoados por 8 segundos |
+| Secundária | A Estrela | Cura 15% de PV em aparar bem-sucedido (acumula 3 vezes) |
+| Terciária | O Enforcado | Reduz o movimento da chefe em 10% durante a fase 3 |
+| Opcional | A Carruagem | Ganhe 1,5× de frames de invencibilidade após esquiva |
+
+A Torre é a carta mais importante no slot porque a janela de dano de 8 segundos se alinha perfeitamente com a punição de aparar de 18 frames na fase 2. A Estrela te mantém vivo através dos ticks de dano do piso na fase 2, e O Enforcado te dá espaço para respirar durante a fase de fúria quando os combos dela aceleram. A Carruagem é uma escolha de luxo que ajuda se você ainda está aprendendo as janelas de esquiva, mas jogadores experientes a trocam por uma carta de dano como O Sol.
+
+Para a seleção de arma, a [tier list de armas de Castlevania: Belmont's Curse](/en/weapons/castlevania-belmont-s-curse-weapon-tier-list/) classifica o Vampire Killer como a opção mais forte de dano sustentado para esta luta, mas a Sabre Abençoada se destaca na fase 3 por causa de seu bônus de dano sagrado. Escolha a arma que combina com sua consistência de aparar — se você acerta 70%+ dos seus aparos, o dano base mais alto do Vampire Killer vence; se você ainda está aprendendo as janelas, a hitbox mais tolerante da Sabre Abençoada é a escolha mais segura.
+
+## Detalhamento da Fase de Dano e Roteamento de Ataque Ótimo
+
+A limpeza mais limpa de três ciclos de Joana d'Arc requer um roteamento de dano específico que aproveita as janelas de aparar de cada fase. O ciclo 1 cobre a fase 1 apenas com ataques leves, o ciclo 2 reduz a fase 2 com punições de aparar com a Torre ativa, e o ciclo 3 corre contra o timer da nova sagrada através da fase 3. Jogadores que tentam pular ciclos se comprometendo demais na fase 1 quase sempre morrem para a fase de fúria porque entram nela sem cargas de Arcana restantes.
+
+### Plano de Dano da Fase 1
+
+- Acertar 3 varreduras, punir cada uma com 2 golpes leves de chicote (total de 6 golpes por ciclo)
+
+- Acertar 1 estocada, punir com 1 pesado cancelado por pulo
+
+- Evitar o arremesso de lança para dano; use-o como um reset gratuito de ciclo de esquiva
+
+- Terminar a fase 1 a 66% de PV com PV cheio e pelo menos 2 cargas de Arcana
+
+### Plano de Dano da Fase 2
+
+- Abrir com a Arcana Torre antes de engajar
+
+- Aparar 2 colunas de chama, punir cada uma com pesado completo cancelado por pulo + 2 golpes leves
+
+- Use o dano do piso a seu favor jogando agressivamente e curando através dos acúmulos da Arcana Estrela
+
+- Pule a onda de solo consagrado completamente; não vale o reset de posicionamento
+
+### Plano de Dano da Fase 3
+
+- Ative O Enforcado imediatamente
+
+- Aparar no cooldown, punir com golpes leves únicos para maximizar o dano por segundo
+
+- Acompanhe o timer de 45 segundos da nova; resete para o canto 5 segundos antes de cada explosão
+
+- Não se comprometa demais com punições de golpe de investida; a recuperação é longa demais e a nova vai te pegar
+
+| Fase | Meta do Ciclo | Dano por Ciclo | Cargas de Arcana Usadas | Orçamento de Tempo |
+|-------|------------|------------------|---------------------|-------------|
+| 1 | 100% → 66% | ~6.200 de PV | 0 (ou 1 por segurança) | 90 segundos |
+| 2 | 66% → 33% | ~8.400 de PV (com a Torre) | 1 Torre + 1-2 acúmulos de Estrela | 110 segundos |
+| 3 | 33% → 0% | ~6.000 de PV | 1 Enforcado | 90 segundos (2 ciclos de nova) |
+
+Este roteamento assume que você está usando o Vampire Killer com todas as melhorias, e os números vêm de uma calculadora de dano mantida pela comunidade compartilhada no tópico de otimização de runs. O orçamento de tempo de 90 segundos para a fase 1 inclui a cutscene de abertura, então o relógio de combate real é mais próximo de 70 segundos.
+
+## Erros Comuns Que Te Matam na Fase de Fúria
+
+A fase de fúria pune a ganância acima de tudo, e a maioria das mortes a 33% de PV é causada por um de quatro erros comuns. Jogadores que limpam a fase de fúria consistentemente a tratam como uma fase de sobrevivência primeiro e uma fase de dano segundo, o que parece contraintuitivo, mas corresponde à intenção do design.
+
+| Erro | Por Que Te Mata | Correção |
+|---------|------------------|-----|
+| Perseguir punições de golpe de investida | Recuperação de 16 frames, a nova te pega aos 38 segundos | Puna com um golpe leve único, resete |
+| Ficar na plataforma central | O dano do piso te atinge enquanto você espera os sinais | Abrace o pilar mais próximo do seu alvo de aparar |
+| Esquecer o timer de 45 segundos | A nova limpa PV cheio | Defina um timer visual no seu HUD |
+| Queimar toda a Arcana na fase 2 | Sem cura para o dano do piso da fase 3 | Guarde 1 acúmulo de Estrela para a fúria |
+| Rolagem de pânico através dos sinais | A rolagem cancela sua entrada de aparar | Fique parado, apare na inclinação |
+
+O maior assassino individual na fase de fúria é a rolagem de pânico, porque ela cancela seu buffer de entrada de aparar. As animações de sinal de Joana d'Arc são projetadas para atrair rolagens porque parecem semelhantes ao início de seu golpe de investida, e a equipe de desenvolvimento confirmou no Discord oficial de Belmont's Curse que os sinais são intencionalmente ambíguos para recompensar reconhecimento de padrões em vez de velocidade de reação.
+
+## Como Joana d'Arc Se Compara a Outros Chefes de Fim de Jogo
+
+Dentro da conversa mais ampla da [tier list de chefes de belmont's curse](/en/bosses/castlevania-belmont-s-curse-bosses/), Joana d'Arc está no topo da curva obrigatória de fim de jogo porque sua fase de fúria é mecanicamente distinta de todos os outros chefes do jogo. Carmilla tem um timer de fúria semelhante, mas a fúria de Carmilla é um aumento de dano em vez de uma limpeza completa da arena, então a mecânica de nova de Joana d'Arc é o verdadeiro pico de dificuldade. Death pune posicionamento, e Medusa pune ganância, mas Joana d'Arc pune ambos ao mesmo tempo.
+
+| Chefe | Dificuldade (1-10) | Modo de Falha Primário | Aperto da Janela de Aparar | Punição da Fúria |
+|------|-------------------|----------------------|------------------------|-------------------|
+| Death | 7 | Posicionamento | 8 frames | +50% de dano |
+| Medusa | 6 | Ganância | 10 frames | Olhar de petrificação |
+| Carmilla | 8 | Rastreamento de combo | 6 frames | +75% de dano |
+| Joana d'Arc | 9 | Timing + sobrevivência | 4-7 frames | Nova de arena completa |
+| Isaac | 9 | Sobreposição de fases | 6 frames | Reinício da fase 2 |
+| The Fallen | 10 | Reconhecimento de padrões | 3 frames | Velocidade de ataque dobrada |
+
+De acordo com os materiais oficiais de imprensa da Konami, o [site oficial de Castlevania: Belmont's Curse](https://www.konami.com/games/castlevania/belmonts_curse/us/en-us/) lista Joana d'Arc como um encontro de "teste de fé", que é uma dica de texto de sabor de que a luta tem a intenção de bloquear a masmorra pós-jogo. Se você não conseguir limpá-la com menos de 5 mortes, o conteúdo pós-jogo vai ser brutal porque todo chefe posterior assume que você dominou suas janelas de aparar.
+
+## Perguntas Frequentes
+
+**Qual é a melhor configuração de Arcana para a luta contra Joana d'Arc em Belmont's Curse?**
+
+A configuração mais forte é **A Torre** como primária para o dano de 20% a chefes atordoados, **A Estrela** para sustentação de cura por aparar através dos ticks do piso da fase 2, e **O Enforcado** para desacelerá-la durante a fase de fúria. Esse trio cobre dano, cura e controle de multidão, e deixa um slot opcional aberto para **A Carruagem** se você ainda está aprendendo as janelas de esquiva.
+
+**Quão apertada é a janela de aparar para o arremesso de lança de Joana d'Arc?**
+
+A janela de aparar do arremesso de lança é de 4 frames, que é a mais apertada do encontro de Joana d'Arc e a segunda mais apertada de todo o jogo fora do combo em cadeia de Carmilla. O buffer de entrada é de 9 frames antes do impacto, então você pode aparar o arremesso de lança de forma confiável se começar a entrada no sinal de brilho branco, que aparece cerca de 30 frames antes da hitbox ativa.
+
+**Você pode pular a chefe Joana d'Arc em Castlevania: Belmont's Curse?**
+
+Não, Joana d'Arc é um encontro obrigatório para o final da Catedral da Chama, embora sua sala física seja tecnicamente rotulada como opcional na tela de seleção de chefes. Pular ela significa que você não pode acessar a masmorra pós-jogo, e você ficará bloqueado da sequência de créditos do final verdadeiro que desbloqueia o Traje de Estilo Alucard para Rose.
+
+**Qual é o timer da nova sagrada na fase de fúria de Joana d'Arc?**
+
+A nova sagrada dispara a cada 45 segundos na fase 3, e cobre toda a arena exceto a plataforma de canto mais distante de Joana d'Arc. De acordo com dados da comunidade, o timer começa no primeiro frame da cutscene de fúria, então você tem exatamente dois ciclos de ataque entre cada nova se jogar no tempo máximo.
+
+**Como a luta contra Joana d'Arc se compara a Isaac em termos de dificuldade?**
+
+Joana d'Arc é classificada como ligeiramente mais fácil que Isaac na escala de dificuldade da comunidade porque a mecânica de reinício da fase 2 de Isaac força uma queima completa de cura, enquanto a fúria de Joana d'Arc apenas requer disciplina de posicionamento. Ambas as lutas exigem execução de aparar precisa, mas Joana d'Arc te dá mais janelas de recuperação entre seus combos, o que a torna a luta de treino melhor para novos jogadores que querem aprender o timing de fúria antes de tentar Isaac.

@@ -1,0 +1,187 @@
+export const metadata = {
+    id: "belmont-s-curse-joan-of-arc-strategy",
+    slug: "belmont-s-curse-joan-of-arc-strategy",
+    order: 4,
+    difficulty: "advanced",
+    title: "Castlevania: Belmont's Curse Joan-of-Arc-Strategie und Phasen",
+    description: "Meistere die Castlevania: Belmont's Curse Joan-of-Arc-Strategie mit Wutphasen-Ankündigungen, verwundbaren Zeitfenstern und Parier-Timing für Roses härteste Prüfung.",
+    keywords: ["belmont's curse joan of arc strategie", "belmont's curse boss parier timing", "belmont's curse boss ausweich leitfaden", "belmont's curse boss wutphase", "belmont's curse boss verwundbares zeitfenster", "belmont's curse boss tierliste"],
+    image: "/images/bosses/ibRD7Yd3CPI.webp",
+    video: "ibRD7Yd3CPI",
+    category: "bosses",
+    date: "2026-09-04",
+    lastModified: "2026-09-04"
+}
+
+## Warum Joan of Arc Roses härteste verpflichtende Hürde in Belmont's Curse ist
+
+Joan of Arc ist die optionale Heilige, die zur Wächterin wurde und Rose Belmonts Fortschritt im späten Spiel blockiert, und ihre Begegnung bestraft dieselben schlampigen Gewohnheiten, die dich durch Death und Medusa getragen haben. Laut der [offiziellen Castlevania: Belmont's Curse Steam-Seite](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/) legt der 2D-Action-Erkundungstitel von Konami, Evil Empire und Motion Twin eine dreiphasige Eskalation auf jeden „heiligen" Gegner, sodass sich der Joan-of-Arc-Kampf weniger wie ein Statistik-Check und mehr wie eine Timing-Prüfung anfühlt. Spieler, die bereits die [umfassendere Castlevania: Belmont's Curse Boss-Liste](/en/bosses/castlevania-belmont-s-curse-bosses/) gemeistert haben, wissen, dass die Schwierigkeitskurve rund um die Kathedrale der Flamme steil ansteigt, und Joan of Arc ist der Kontrollpunkt, der entscheidet, ob dein Build die hintere Hälfte der Route überlebt.
+
+Dieser Leitfaden zerlegt ihre Angriffsskripte, ihre Ankündigungsanimationen, die Parierfenster, die dich tatsächlich mit einem verwundbaren Zeitfenster belohnen, und die Arcana-Ausrüstung, die eine zehn Tode lange Qual in einen sauberen Drei-Zyklen-Sieg verwandelt. Der Kampf verbindet präzise Parier-Reads mit Positionierungsrätseln, und die Wutphase würfelt das gesamte Muster neu, sodass dich das Muskelgedächtnis von Carmilla das Leben kosten wird.
+
+## Joan-of-Arc-Bossübersicht, Lore-Kontext und Phasenkarte
+
+Joan of Arc ist einer der namentlich genannten optionalen Bosse in der [optionalen Boss-Liste von Castlevania: Belmont's Curse](/en/bosses/castlevania-belmont-s-curse-optional-bosses/), eingereiht neben Isaac und The Fallen als späte Spielprüfung. Ihre Arena ist ein langes, flaches Kirchenschiff mit drei erhöhten Plattformen und einem geheiligten Boden, der heller leuchtet, je weiter ihre Gesundheit sinkt, und so die bevorstehende Wutphase ankündigt. Der Kampf verläuft über drei klar getrennte Phasen, jede mit ihrem eigenen Angriffspool, und das verwundbare Zeitfenster schrumpft mit jedem Zyklus, wenn du deine Parierungen verfehlst.
+
+### Phase 1 – Geheiligte Vorhut (100 % bis 66 % LP)
+
+Die Eröffnungsphase ist auf breite horizontale Schwünge, langsame vertikale Stöße und einen bildschirmlangen Speerwurf ausgelegt, der dir ihr Anlauf-Timing beibringt. Joan of Arc eröffnet jede Kombination mit einem halbsekündigen Schulterabtauchen, und genau dieses Abtauchen ist die einzige Ankündigung, die du für das erste verwundbare Zeitfenster bekommst. Community-Tests, die im Early-Access-Discord geteilt wurden, berichten von einem konsistenten 7-Frame-Parierfenster nach dem Schulterabtauchen, was mit den Frame-Daten übereinstimmt, die Spieler aus der Parierpuppe im Trainingsraum extrahiert haben.
+
+| Phase-1-Angriff | Ankündigungs-Tell | Aktive Frames | Parierfenster | Empfohlenes Ausweichen |
+|----------------|--------------|---------------|--------------|-------------------|
+| Horizontaler Schwung | Schulterabtauchen, Waffe zieht sich 90° zurück | 18 | 7 | Rückwärts-Dash, dann bestrafen |
+| Vertikaler Stoß | Waffe über Kopf erhoben, Haltung verbreitert sich | 22 | 6 | Seitenschritt in Peitschen-Bestrafung |
+| Speerwurf | Arm zieht nach hinten, leuchtet weiß | 30 | 4 | Unter dem Bogen durchtauchen, mit Kreuz zurückkehren |
+| Heiliger Puls | Stampft einmal, Ring breitet sich aus | 14 | 0 (nicht parierbar) | Über den Ring springen |
+| Dash-Angriff | Duckt sich tief, gleitet 3 Kacheln | 20 | 5 | Rückwärts-Dash × 2, auf Erholung warten |
+
+Der Heilige Puls ist der einzige Angriff, den du in Phase 1 nicht parieren kannst, und er ist der erste echte Ausweich-Test des Kampfes. Behandle ihn als Positions-Reset – die Hitbox des Rings ist exakt zwei Kacheln breit, sodass ein einzelner Sprung von der Mittelplattform ihn sauber überwindet. Laut Community-Daten, die während des jüngsten Beta-Zweigs gesammelt wurden, verlieren Spieler, die in dieser Phase zuerst sterben, fast immer gegen den Speerwurf, weil sie versuchten, ein 4-Frame-Fenster zu parieren, ohne zuvor die Eingabe auf die Ankündigung zu puffern.
+
+### Phase 2 – Läuternde Flamme (66 % bis 33 % LP)
+
+Sobald Joan of Arc 66 % LP erreicht, entzünden sich die Bodenkacheln, und die Arena erhält ein Schaden-über-Zeit-Feld, das einmal pro Sekunde tickt. Ihr Angriffspool erweitert sich um zwei neue Bewegungen – eine Flammensäule an ihrer Position und eine fegende geweihte Bodenwelle – und ihre Parierfenster verengen sich überall um 2 Frames. Das neue verwundbare Zeitfenster nach einem erfolgreichen Parieren wächst von 12 auf 18 Frames, weil das Entwicklerteam wollte, dass die zweite Phase entschlossene Aggression belohnt, aber nur, wenn du den Bodenschaden überlebst.
+
+Die wichtigste neue Mechanik in Phase 2 ist der Reset des verwundbaren Zeitfensters. Wenn du einen Flammensäulen-Angriff parierst, ist Joan of Arc in einen 24-Frame-Stagger gezwungen, der sich zu einem freien schweren Angriff mit Roses Vampir-Killer verketten lässt. Der stehende schwere Angriff der Peitsche verfehlt, wenn du zu nah stehst, sodass die optimale Bestrafung ein einzelner sprungabgebrochener schwerer Angriff ist, der bei maximaler Reichweite landet und den zweiten Treffer mit dem letzten Frame des Staggers ausrichtet.
+
+### Phase 3 – Märtyrer-Wutphase (33 % LP und darunter)
+
+Die Wutphase ist der wahre Test deines Plans für die Wutphase des Belmont's-Curse-Bosses. Bei 33 % LP leuchtet Joan of Arc golden, ihre Ankündigungen verschwinden beim ersten Angriff jeder Kombination, und sie erhält eine heilige Nova, die die gesamte Arena alle 45 Sekunden auslöscht. Die heilige Nova wird durch einen einzelnen Glockenton angekündigt, sodass Audio-Cueing Pflicht ist. Das verwundbare Zeitfenster nach einem Parieren in Phase 3 ist wieder bei 12 Frames, aber die Stagger-Animation ist kürzer, sodass du genau einen freien leichten Angriff bekommst, bevor du deine Position zurücksetzen musst.
+
+Die entscheidende Überlebensregel für die Wutphase ist das Timing. Die 45-Sekunden-Abklingzeit der Nova bedeutet, dass du Platz für zwei volle Angriffszyklen zwischen jeder Explosion hast, was gerade ausreicht, um sie zu zerlegen, wenn du Parierungen landest. Spieler, die den Timer ignorieren und sich überstrecken, fangen die Nova bei voller LP und verlieren den Lauf.
+
+## Parier-Timing und Ausweich-Reads für jeden Joan-of-Arc-Angriff
+
+Das Parier-Timing für Joan of Arc ist auf ihre Haltungsbrüche aufgebaut, und das Fenster ist immer dasselbe, unabhängig davon, welcher Angriff folgt. Solange du das Schulterabtauchen richtig liest, fängt eine gepufferte Parier-Eingabe die aktiven Frames. Community-Tests bestätigen, dass das Eingabepuffer-Fenster 9 Frames beträgt, was dir einen leichten Spielraum für Latenz gibt, wenn du online spielst oder über Remote Play streamst.
+
+### Referenztabelle für das Parier-Timing
+
+| Angriffstyp | Phase verfügbar | Parier-Eingabepuffer | Erholung nach Parieren | Bestrafungs-Schadensfenster |
+|-------------|-----------------|--------------------|-----------------------|-----------------------|
+| Schwungangriffe | 1, 2, 3 | 9 Frames vor Aufprall | 14 Frames | 12-Frame-Verwundbarkeit |
+| Stoßangriffe | 1, 2, 3 | 7 Frames vor Aufprall | 12 Frames | 10-Frame-Verwundbarkeit |
+| Speerwurf | 1, 2 | 5 Frames vor Aufprall | 10 Frames | 8-Frame-Verwundbarkeit |
+| Flammensäule | 2, 3 | 6 Frames vor Aufprall | 24 Frames | 18-Frame-Verwundbarkeit |
+| Dash-Angriff | 1, 2, 3 | 8 Frames vor Aufprall | 16 Frames | 14-Frame-Verwundbarkeit |
+| Heilige Nova | 3 (Wutphase) | Nicht parierbar | N/A | In Sicherheitszone ausweichen |
+
+Für den [Parier-Timing-Trainingsansatz für Belmont's-Curse-Bosse](/en/bosses/how-to-beat-joan-of-arc-belmont-s-curse/) ahmt die Parierpuppe in der Vorhalle der Kathedrale nur das Schwung-Timing nach, sodass sie zum Aufwärmen nützlich ist, dich aber nicht auf den Speerwurf vorbereitet. Der Speerwurf hat einen einzigartigen Anlauf, bei dem Joan ihren Arm ganz nach hinten zieht und der Speer weiß leuchtet, und das 4-Frame-Parierfenster ist das engste im Spiel außerhalb von Carmillas Kettenkombination.
+
+### Ausweich-Leitfaden für nicht parierbare Angriffe
+
+Zwei Angriffe im Joan-of-Arc-Kampf können nicht pariert werden, und der [Ausweich-Leitfaden für Belmont's-Curse-Bosse](/en/bosses/castlevania-belmont-s-curse-bosses/) ist auf Audio und Positionierung statt auf Reaktionszeit aufgebaut. Der Heilige Puls in Phase 1 ist ein Bodenring, der einen einzelnen Sprung von der Mittelplattform erfordert. Die heilige Nova in Phase 3 ist eine Vollbild-Explosion, der du ausweichst, indem du zur Eckplattform rennst, die am weitesten von Joan entfernt ist – die einzige Sicherheitszone, weil sich die Explosion von ihrer Position aus ausbreitet.
+
+| Nicht parierbare Bewegung | Phase | Ausweichmethode | Sicherheitszone |
+|------------------|-------|--------------|-----------|
+| Heiliger Puls | 1, 2 | Einzelner Sprung von der Mitte | Überall über Bodenniveau |
+| Heilige Nova | 3 | Zur fernen Eckplattform rennen | Eckplattform am weitesten vom Boss |
+| Phasenübergangs-Zwischensequenz | 1→2, 2→3 | Kostenloses Heilfenster | Hinter Säule (kein Schaden) |
+
+Die Phasenübergangs-Zwischensequenzen sind kostenlose Heilfenster, und erfahrene Spieler nutzen sie, um sich mit einer einzigen Arcana-Ladung aufzufüllen. Laut dem [Wikipedia-Eintrag zu Castlevania: Belmont's Curse](https://en.wikipedia.org/wiki/Castlevania:_Belmont%27s_Curse) ist Roses Werkzeugkasten darauf aufgebaut, Arcana-Ausbrüche in Peitschen-Kombinationen zu verketten, sodass das Übergangsfenster die sauberste Gelegenheit ist, dein aktives Arcana aufzufrischen, bevor der Druck der nächsten Phase ansteigt.
+
+## Arcana-Ausrüstung, Waffenwahl und Vorbereitung vor dem Kampf
+
+Das beste Build für Joan of Arc ist eine parierfokussierte Ausrüstung, die deinen Stagger-Bestrafungsschaden maximiert. Die [Castlevania: Belmont's Curse Arcana-Tierliste](/en/arcana/castlevania-belmont-s-curse-boss-arcana/) empfiehlt
+
+| Arcana-Slot | Empfohlene Karte | Effekt auf den Jeanne-d'Arc-Kampf |
+|-------------|------------------|-----------------------------------|
+| Primär | Der Turm | +20 % Schaden gegen betäubte Bosse für 8 Sekunden |
+| Sekundär | Der Stern | Heilt 15 % KP bei erfolgreichem Parieren (stapelbar 3-mal) |
+| Tertiär | Der Gehängte | Verlangsamt die Bossbewegung in Phase 3 um 10 % |
+| Optional | Der Wagen | 1,5× Unverwundbarkeitsrahmen nach dem Ausweichen |
+
+Der Turm ist die wichtigste Karte in diesem Slot, weil das 8-Sekunden-Schadensfenster perfekt mit der 18-Frame-Parier-Bestrafung in Phase 2 harmoniert. Der Stern hält dich durch die Bodenschaden-Ticks in Phase 2 am Leben, und der Gehängte verschafft dir in der Wutphase, wenn ihre Kombos schneller werden, etwas Luft zum Atmen. Der Wagen ist eine Luxuswahl, die hilft, wenn du die Ausweichfenster noch lernst, aber erfahrene Spieler ersetzen ihn durch eine Schadenskarte wie Die Sonne.
+
+Bei der Waffenwahl stuft die [Castlevania: Belmont's Curse Waffen-Tierliste](/en/weapons/castlevania-belmont-s-curse-weapon-tier-list/) den Vampirkiller als die stärkste Option für anhaltenden Schaden in diesem Kampf ein, aber der Gesegnete Säbel zieht in Phase 3 dank seines Bonus für heiligen Schaden davon. Wähle die Waffe passend zu deiner Parier-Konstanz – wenn du 70 % oder mehr deiner Paraden landest, gewinnt der höhere Grundschaden des Vampirkillers; wenn du die Fenster noch lernst, ist die verzeihendere Trefferbox des Gesegneten Säbels die sicherere Wahl.
+
+## Schadensphasen-Aufschlüsselung und optimale Angriffsroute
+
+Ein sauberer Drei-Zyklen-Clear von Jeanne d'Arc erfordert eine spezifische Schadensroute, die die Parierfenster jeder Phase ausnutzt. Zyklus 1 deckt Phase 1 nur mit leichten Angriffen ab, Zyklus 2 macht in Phase 2 mit Turm-aktiven Parier-Bestrafungen ordentlich Schaden, und Zyklus 3 kämpft in Phase 3 gegen den Timer der Heiligen Nova. Spieler, die versuchen, Zyklen zu überspringen, indem sie in Phase 1 zu viel riskieren, sterben fast immer in der Wutphase, weil sie ohne verbleibende Arcana-Ladungen dort ankommen.
+
+### Schadensplan Phase 1
+
+- 3 Schwünge landen, jeden mit 2 leichten Peitschentreffern bestrafen (insgesamt 6 Treffer pro Zyklus)
+
+- 1 Stoß landen, mit 1 sprungabgebrochenen schweren Angriff bestrafen
+
+- Den Speerwurf nicht für Schaden nutzen; ihn als kostenlosen Ausweichzyklus-Reset verwenden
+
+- Phase 1 bei 66 % KP mit vollem Leben und mindestens 2 Arcana-Ladungen beenden
+
+### Schadensplan Phase 2
+
+- Turm-Arcana aktivieren, bevor du den Kampf aufnimmst
+
+- 2 Flammensäulen parieren, jede mit vollem sprungabgebrochenen schweren Angriff + 2 leichten Treffern bestrafen
+
+- Den Bodenschaden zu deinem Vorteil nutzen, indem du aggressiv spielst und dich durch die Stern-Arcana-Stapel heilst
+
+- Die geweihte Bodenwelle komplett überspringen; sie ist den Positions-Reset nicht wert
+
+### Schadensplan Phase 3
+
+- Gehängten sofort aktivieren
+
+- Parieren im Abklingtakt, mit einzelnen leichten Treffern bestrafen, um den Schaden pro Sekunde zu maximieren
+
+- Den 45-Sekunden-Nova-Timer im Auge behalten; 5 Sekunden vor jeder Explosion in die Ecke zurückziehen
+
+- Keine Überkommits bei Ansturmangriff-Bestrafungen; die Erholungszeit ist zu lang und die Nova erwischt dich
+
+| Phase | Zyklus-Ziel | Schaden pro Zyklus | Verbrauchte Arcana-Ladungen | Zeitbudget |
+|-------|-------------|-------------------|-----------------------------|------------|
+| 1 | 100 % → 66 % | ~6.200 KP | 0 (oder 1 zur Sicherheit) | 90 Sekunden |
+| 2 | 66 % → 33 % | ~8.400 KP (mit Turm) | 1 Turm + 1–2 Stern-Stapel | 110 Sekunden |
+| 3 | 33 % → 0 % | ~6.000 KP | 1 Gehängter | 90 Sekunden (2 Nova-Zyklen) |
+
+Diese Route setzt voraus, dass du den Vampirkiller mit allen Verbesserungen trägst, und die Zahlen stammen aus einem von der Community betriebenen Schadensrechner, der im Run-Optimierungs-Thread geteilt wurde. Das 90-Sekunden-Zeitbudget für Phase 1 beinhaltet die Eröffnungs-Zwischensequenz, die tatsächliche Kampfzeit liegt also näher an 70 Sekunden.
+
+## Häufige Fehler, die dich in der Wutphase töten
+
+Die Wutphase bestraft vor allem Gier, und die meisten Tode bei 33 % KP gehen auf einen von vier häufigen Fehlern zurück. Spieler, die die Wutphase konstant meistern, behandeln sie zuerst als Überlebensphase und erst danach als Schadensphase – das klingt kontraintuitiv, entspricht aber der Designabsicht.
+
+| Fehler | Warum er dich tötet | Lösung |
+|--------|---------------------|--------|
+| Ansturmangriff-Bestrafungen hinterherjagen | 16-Frame-Erholungszeit, Nova erwischt dich bei 38 Sekunden | Mit einem einzelnen leichten Treffer bestrafen, dann zurückziehen |
+| In der Mitte der Plattform stehen | Bodenschaden-Ticks, während du auf Vorwarnanimationen wartest | An der Säule nahe deinem Parierziel festhalten |
+| Den 45-Sekunden-Timer vergessen | Nova löscht dein gesamtes Leben | Visuellen Timer im HUD einstellen |
+| Alle Arcana in Phase 2 verbrennen | Keine Heilung für den Bodenschaden in Phase 3 | 1 Stern-Stapel für die Wutphase aufheben |
+| Panikrollen durch Vorwarnanimationen | Die Rolle bricht deinen Parier-Eingabepuffer ab | Stillstehen, beim Absenken parieren |
+
+Der mit Abstand größte Killer in der Wutphase ist die Panikrolle, weil sie deinen Parier-Eingabepuffer abbricht. Jeanne d'Arcs Vorwarnanimationen sind darauf ausgelegt, Rollen herauszulocken, weil sie der Startanimation ihres Ansturmangriffs ähneln, und das Entwicklerteam hat im offiziellen Belmont's-Curse-Discord bestätigt, dass die Vorwarnungen absichtlich mehrdeutig sind, um Mustererkennung statt Reaktionsgeschwindigkeit zu belohnen.
+
+## Wie Jeanne d'Arc im Vergleich zu anderen Endgame-Bossen abschneidet
+
+In der breiteren Diskussion der [Belmont's-Curse-Boss-Tierliste](/en/bosses/castlevania-belmont-s-curse-bosses/) steht Jeanne d'Arc an der Spitze der verpflichtenden Endgame-Kurve, weil sich ihre Wutphase mechanisch von jedem anderen Boss im Spiel unterscheidet. Carmilla hat einen ähnlichen Wut-Timer, aber Carmillas Wut ist eine Schadenserhöhung statt einer vollständigen Arena-Löschung, also ist Jeannes Nova-Mechanik der eigentliche Schwierigkeitssprung. Death bestraft Positionierung und Medusa bestraft Gier, aber Jeanne d'Arc bestraft beides gleichzeitig.
+
+| Boss | Schwierigkeit (1–10) | Hauptversagensmodus | Parierfenster-Enge | Wut-Bestrafung |
+|------|----------------------|---------------------|--------------------|----------------|
+| Death | 7 | Positionierung | 8 Frames | +50 % Schaden |
+| Medusa | 6 | Gier | 10 Frames | Versteinernder Blick |
+| Carmilla | 8 | Kombo-Tracking | 6 Frames | +75 % Schaden |
+| Jeanne d'Arc | 9 | Timing + Überleben | 4–7 Frames | Vollständige Arena-Nova |
+| Isaac | 9 | Phasenüberlappung | 6 Frames | Phasen-2-Neustart |
+| The Fallen | 10 | Mustererkennung | 3 Frames | Angriffsgeschwindigkeit verdoppelt |
+
+Laut den offiziellen Konami-Pressematerialien bezeichnet die [offizielle Castlevania: Belmont's Curse-Website](https://www.konami.com/games/castlevania/belmonts_curse/us/en-us/) Jeanne d'Arc als „Prüfung des Glaubens" – ein Flavour-Text-Hinweis darauf, dass der Kampf den Zugang zum Post-Game-Dungeon versperren soll. Wenn du sie nicht mit unter 5 Toden besiegen kannst, wird der Post-Game-Inhalt brutal, denn jeder spätere Boss setzt voraus, dass du ihre Parierfenster gemeistert hast.
+
+## Häufig gestellte Fragen
+
+**Was ist die beste Arcana-Ausrüstung für den Jeanne-d'Arc-Kampf in Belmont's Curse?**
+
+Die stärkste Ausrüstung ist **Der Turm** als Primärkarte für die 20 % Schaden gegen betäubte Bosse, **Der Stern** für Parier-Heilung durch die Bodenticks in Phase 2 und **Der Gehängte**, um sie in der Wutphase zu verlangsamen. Dieses Trio deckt Schaden, Heilung und Crowd-Control ab und lässt einen optionalen Slot für **Den Wagen** offen, falls du die Ausweichfenster noch lernst.
+
+**Wie eng ist das Parierfenster für Jeanne d'Arcs Speerwurf?**
+
+Das Parierfenster des Speerwurfs beträgt 4 Frames – das engste im gesamten Jeanne-d'Arc-Kampf und das zweitengste im ganzen Spiel außerhalb von Carmillas Kettenkombo. Der Eingabepuffer beträgt 9 Frames vor dem Aufprall, du kannst den Speerwurf also zuverlässig parieren, wenn du die Eingabe beim Weißglühen-aufleuchten startest, das etwa 30 Frames vor der aktiven Trefferbox erscheint.
+
+**Kann man den Jeanne-d'Arc-Boss in Castlevania: Belmont's Curse überspringen?**
+
+Nein, Jeanne d'Arc ist ein verpflichtender Kampf für das Kathedralen-der-Flamme-Ende, auch wenn ihr Raum im Boss-Auswahlbildschirm technisch als optional markiert ist. Wenn du sie überspringst, kannst du nicht auf den Post-Game-Dungeon zugreifen und bist vom wahren End-Credits-Ablauf ausgeschlossen, der das Alucard-Stil-Kostüm für Rose freischaltet.
+
+**Was ist der Timer der Heiligen Nova in Jeanne d'Arcs Wutphase?**
+
+Die Heilige Nova feuert in Phase 3 alle 45 Sekunden und bedeckt die gesamte Arena außer der Eckplattform, die am weitesten von Jeanne d'Arc entfernt ist. Laut Community-Daten startet der Timer mit dem ersten Frame der Wut-Zwischensequenz, du hast also bei maximalem Tempo genau zwei Angriffszyklen zwischen jeder Nova.
+
+**Wie schneidet der Jeanne-d'Arc-Kampf im Schwierigkeitsvergleich zu Isaac ab?**
+
+Jeanne d'Arc wird auf der Community-Schwierigkeitsskala als etwas leichter als Isaac eingestuft, weil Isaacs Phasen-2-Neustart-Mechanik einen vollständigen Heilungsverbrauch erzwingt, während Jeannes Wut nur Positionsdisziplin erfordert. Beide Kämpfe verlangen präzises Parieren, aber Jeanne d'Arc bietet mehr Erholungsfenster zwischen ihren Kombos, was sie zum besseren Trainingskampf für neue Spieler macht, die das Wut-Timing lernen wollen, bevor sie sich an Isaac wagen.

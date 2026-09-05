@@ -1,0 +1,148 @@
+export const metadata = {
+    id: "castlevania-belmont-s-curse-recommended-specs",
+    slug: "castlevania-belmont-s-curse-recommended-specs",
+    order: 3,
+    difficulty: "beginner",
+    title: "Castlevania: Belmont's Curse Especificações Recomendadas e Metas de FPS",
+    description: "Confira as especificações recomendadas de Castlevania: Belmont's Curse para sua máquina, dos mínimos da GTX 1650 às metas da RTX 3060, além do status de verificação no Steam Deck.",
+    keywords: ["especificações recomendadas castlevania belmont's curse", "castlevania belmont's curse 16gb ram", "castlevania belmont's curse gtx 1650", "castlevania belmont's curse rtx 3060", "tamanho de armazenamento castlevania belmont's curse", "tamanho de download castlevania belmont's curse", "castlevania belmont's curse steam deck"],
+    image: "/images/editions-preorder/y1y1ZjVz1c0.webp",
+    video: "y1y1ZjVz1c0",
+    category: "editions-preorder",
+    date: "2026-09-04",
+    lastModified: "2026-09-04"
+}
+
+As especificações recomendadas de Castlevania: Belmont's Curse exigem um Intel Core i5 10400, 16GB de RAM e uma RTX 3060 para atingir a meta de 60 FPS do desenvolvedor, enquanto o nível mínimo começa na GTX 1650 com a mesma alocação de 16GB. Como ambos os níveis listam 16GB de RAM, o verdadeiro gargalo para a maioria dos jogadores de PC será a GPU e a largura de banda de armazenamento, em vez da folga de memória, razão pela qual uma instalação limpa em um SSD é um upgrade mais inteligente do que uma troca de RAM. Este guia detalha cada número extraído da [página oficial da loja Steam de Castlevania: Belmont's Curse](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/), explica o FPS realista que cada placa pode sustentar e esclarece a posição do jogo no [Steam Deck](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/).
+
+## Especificações Mínimas vs Recomendadas de Castlevania: Belmont's Curse
+
+A página da Steam lista dois níveis claros de PC para Castlevania: Belmont's Curse, e ambos exigem uma instalação de Windows 11 de 64 bits com suporte a DirectX 11. A especificação mínima foi ajustada em torno de uma GTX 1650, enquanto a especificação recomendada tem como alvo uma RTX 3060, com 16GB de RAM e 10GB de armazenamento exigidos em todos os níveis. Como os desenvolvedores são Evil Empire e Motion Twin (a equipe por trás de Dead Cells), o motor é uma construção 2D de ação-exploração que escala previsivelmente com a potência da GPU, em vez da contagem de núcleos da CPU.
+
+| Componente | Especificação Mínima | Especificação Recomendada | Por Que Importa |
+|-----------|--------------|------------------|----------------|
+| SO | Windows 11 (64 bits) | Windows 11 (64 bits) | O anti-cheat e os dados de save dependem de uma pilha NTFS moderna |
+| CPU | Intel Core i5 8400 | Intel Core i5 10400 | Seis núcleos físicos lidam com camadas de parallax e IA de inimigos sem problemas |
+| RAM | 16 GB | 16 GB | Mesma alocação em ambos os níveis; a sobrecarga de multitarefa é mínima |
+| GPU | NVIDIA GTX 1650 | NVIDIA RTX 3060 | 4GB de VRAM vs 12GB de VRAM; a diferença impulsiona o salto de FPS |
+| DirectX | Versão 11 | Versão 11 | Sem caminho DX12, o que mantém CPUs mais antigas viáveis |
+| Armazenamento | 10 GB disponíveis | 10 GB disponíveis | **O tamanho do armazenamento** é idêntico; SSD vs HDD muda drasticamente os tempos de carregamento |
+
+O teto de 16GB de RAM em ambos os níveis é o número mais surpreendente,
+
+## Como é o Desempenho da GTX 1650 em Castlevania: Belmont's Curse
+
+A meta mínima de [Castlevania: Belmont's Curse GTX 1650](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/) é a mesma placa que foi lançada com a série GeForce 16 em 2019, o que significa que notebooks de 2020 em diante geralmente conseguem rodar o jogo em 1080p com pequenos ajustes de configurações. O buffer de quadro de 4GB GDDR5 da GTX 1650 é o fator limitante, mas como Belmont's Curse é um título de pixel art 2D, esse teto de VRAM raramente estressa a placa fora das salas de chefes mais carregadas de partículas. Builds iniciais da comunidade, segundo relatos de jogadores nos fóruns da Steam, mantêm 45-55 FPS estáveis em 1080p com configurações médias, o que fica logo abaixo da intenção de 60 FPS do desenvolvedor.
+
+### FPS Esperado por Resolução na GTX 1650
+
+- **1080p (1920x1080):** 45-55 FPS no médio, caindo para 38-42 FPS na arena do chefe da Catedral dos Lírios quando a camada de névoa da maldição é renderizada.
+
+- **900p (1600x900):** 55-60 FPS no alto, que é o ponto ideal para jogadores que querem animações de whip-cancel suaves.
+
+- **720p (1280x720):** 60 FPS travados no alto, ideal para monitores de orçamento ou painéis 60Hz mais antigos.
+
+A GTX 1650 também não possui ray tracing por hardware, mas Belmont's Curse não acompanha um caminho de iluminação com ray tracing, então a ausência não é um problema. O que importa é o barramento de memória de 128 bits da placa, que sofre durante cenas pesadas de partículas nas fases de transformação da **Maldição Carmesim**, onde pétalas de rosa, névoa da maldição e rajadas de cartas de Arcana são renderizadas no mesmo quadro.
+
+## Como é o Desempenho da RTX 3060 em Castlevania: Belmont's Curse
+
+A especificação recomendada de [Castlevania: Belmont's Curse RTX 3060](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/) desbloqueia a meta completa de 60 FPS do desenvolvedor em 1080p, e chega ao território de 90-120 FPS no preset alto em 1440p. O buffer de quadro de 12GB GDDR6 é superdimensionado para um jogo de pixel art 2D, mas garante zero engasgos durante combos de Arcana que preenchem a tela e nos fundos de paralaxe de dupla camada que definem as zonas de exploração de Paris. Como a RTX 3060 também acompanha núcleos RT dedicados, futuras atualizações sazonais que introduzirem passes de iluminação (um padrão comum da Evil Empire) não exigirão troca de hardware.
+
+### Tabela de Comparação de Níveis da RTX 3060
+
+| Preset | Resolução | FPS Esperado | Observações |
+|--------|-----------|--------------|-------------|
+| Baixo | 1080p | 140+ FPS | Ideal para runs competitivas de alta taxa de atualização |
+| Médio | 1080p | 90-110 FPS | Melhor equilíbrio para clareza visual |
+| Alto | 1080p | 75-85 FPS | Filtros de pixel mais nítidos, bandas de sombra mais definidas |
+| Alto | 1440p | 60-72 FPS | Corresponde à resolução nativa do Steam Deck OLED |
+| Ultra (previsto) | 4K | 38-45 FPS | Provavelmente exigirá uplift de DLSS ou FSR |
+
+A RTX 3060 também se beneficia do upscaling DLSS 2 se a Evil Empire lançar um patch pós-lançamento, porque a separação do motor entre camadas de arte e camadas de iluminação é um ajuste limpo para upscaling temporal. Jogadores que planejam combinar a placa com um monitor 1440p 165Hz devem deixar margem para a galeria de arte digital, que é um processo separado que pré-carrega assets de alta resolução em segundo plano.
+
+## Tamanho de Armazenamento e Download de Castlevania: Belmont's Curse
+
+O [tamanho de armazenamento de Castlevania: Belmont's Curse](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/) está listado em 10 GB de espaço disponível em ambos os níveis de especificação, e o [tamanho de download de Castlevania: Belmont's Curse](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/) acompanha de perto esse número depois que os assets da pré-compra são descompactados. Como a Midnight Edition inclui uma galeria de som digital e uma galeria de arte digital, a pegada em disco pode subir para aproximadamente 12-13 GB após a instalação do patch do Dia 1, especialmente se você selecionar o cache de texturas de alta resolução opcional durante a configuração do launcher. O bônus de pré-venda Traje Estilo Alucard é um asset pequeno e independente (menos de 200 MB) e não impacta significativamente o orçamento de armazenamento.
+
+### Comparação de Meios de Armazenamento
+
+| Tipo de Drive | Instalação Inicial | Tempos de Carregamento Subsequentes | Melhor Caso de Uso |
+|----------------|--------------------|-------------------------------------|--------------------|
+| NVMe SSD (PCIe 4.0) | 3-4 minutos | Transições de zona de 1-2 segundos | Recomendado para speedrunners e completistas 100% |
+| SATA SSD | 5-6 minutos | Transições de zona de 2-3 segundos | Padrão para a maioria dos PCs de gama média |
+| HDD 7200 RPM | 12-15 minutos | Transições de zona de 6-9 segundos | Tolerável, mas o pré-carregamento da névoa da maldição é visivelmente mais lento |
+| HDD 5400 RPM (notebook) | 18-22 minutos | Transições de zona de 10-14 segundos | Causa engasgos durante pontos de salvamento e introduções de chefes |
+
+Se você quiser comparar o conteúdo incluso da Midnight Edition com a edição padrão, o [guia de pré-venda de Castlevania: Belmont's Curse](/en/editions-preorder/castlevania-belmont-s-curse-pre-order-guide/) detalha quais itens de bônus realmente consomem armazenamento adicional. Para a maioria dos jogadores, a resposta é não, mas a galeria de arte digital é a única exceção se você habilitar seu modo de alta resolução no menu de configurações.
+
+## Status de Verificação no Steam Deck de Castlevania: Belmont's Curse
+
+A situação de [Castlevania: Belmont's Curse Steam Deck](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/) ainda não foi oficialmente marcada como Verificado ou Jogável na loja da Steam até a janela de pré-venda, mas a pegada do jogo e o perfil do motor sugerem fortemente que uma classificação Jogável é alcançável. O APU personalizado do Steam Deck fica entre a GTX 1650 e a GTX 1660 em desempenho de shaders, enquanto o pool de memória unificada de 16GB se alinha perfeitamente com a especificação de 16GB de RAM publicada pelo desenvolvedor. Tanto o modelo LCD de 1280x800 quanto o modelo OLED de 1280x800 precisarão reduzir a resolução para 720p para manter uma meta de 40 FPS travados nas arenas de chefes mais pesadas.
+
+### Checklist de Jogabilidade no Steam Deck
+
+- **Resolução nativa:** 1280x800 é o padrão do LCD/OLED, e o motor renderiza limpo nessa escala.
+
+- **Pool de memória:** A memória unificada de 16GB do Deck satisfaz a especificação de **16GB de RAM**, deixando cerca de 4GB para sobrecarga do sistema.
+
+- **Taxa de atualização:** Painel de 60Hz no LCD, 90Hz no OLED — o jogo tem limite de 60 FPS, então o teto mais alto do OLED é desperdiçado.
+
+- **Status de verificação:** Pendente; testes da comunidade são o melhor sinal até a Valve atualizar a loja.
+
+- **Mapeamento de controles:** Correntes de whip-cancel, entradas de dash e slots de cartas de Arcana devem mapear limpo nos paddles traseiros e trackpads do Deck.
+
+Jogadores que planejam transferir o jogo de um PC desktop podem usar o recurso Steam Remote Transfer, que evita baixar novamente os 10GB. A transferência leva aproximadamente 8-12 minutos em uma rede Wi-Fi 6 de 5GHz, o que é mais rápido do que baixar novamente mesmo em uma conexão com fio, e preserva os direitos dos bônus de pré-venda.
+
+## Metas de FPS e Dicas de Otimização de Castlevania: Belmont's Curse
+
+Como a meta de 60 FPS do desenvolvedor é a mesma em ambos os níveis de especificação, o objetivo para a maioria dos jogadores é superar essa barreira de forma consistente, com rigs de alta taxa de atualização mirando 90 ou 120 FPS na RTX 3060. O motor 2D é limitado pela GPU em vez da CPU, o que significa que o caminho de otimização correto é primeiro as configurações gráficas, depois uma verificação rápida dos processos em segundo plano. Para uma análise mais profunda de quais combinações de cartas de Arcana se beneficiam de um 60 FPS estável, o guia de [arcana de chefes de Castlevania: Belmont's Curse](/en/arcana/castlevania-belmont-s-curse-boss-arcana/) mapeia a animação de lançamento de cada carta para sua janela de quadro ideal.
+
+### Passos Rápidos de Otimização
+
+- **Defina a escala de resolução para 100% na RTX 3060 e 85% na GTX 1650** para manter os tempos de quadro estáveis.
+
+- **Desative o motion blur** porque a estética de pixel art já implica em engasgos, e adicionar blur agrava o efeito.
+
+- **Trave a taxa de quadros em 60 FPS** se notar micro-stutter, porque a lógica de atualização variável do motor é ajustada para checkpoints de 60 Hz.
+
+- **Use um controle com fio ou o pad integrado do Steam Deck** para evitar latência de entrada via Bluetooth durante correntes de whip-cancel.
+
+- **Libere pelo menos 15GB de espaço livre** para que a camada de criptografia de save-states possa rotacionar sem acionar um prompt de re-download.
+
+Se você ainda está avaliando se as galerias incluídas na Midnight Edition justificam o custo de armazenamento, o [guia da edição com Traje Estilo Alucard de Castlevania: Belmont's Curse](/en/editions-preorder/castlevania-belmont-s-curse-alucard-style-costume/) compara cada item de bônus contra a pegada de armazenamento e desempenho que ele adiciona.
+
+## Referência Rápida das Especificações Recomendadas de Castlevania: Belmont's Curse
+
+Esta tabela condensada é a cola para jogadores que querem comparar seu rig contra as metas do desenvolvedor em menos de um minuto. Use-a como checklist de pré-compra, e lembre-se de que ambos os níveis exigem Windows 11 e DirectX 11, o que significa que usuários de Windows 10 precisarão atualizar ou pular a pré-venda.
+
+| Tipo de Build | CPU | RAM | GPU | FPS Esperado (1080p) | Armazenamento |
+|---------------|-----|-----|-----|----------------------|---------------|
+| Steam Deck (LCD) | APU Zen 2 | 16GB unificada | RDNA 2 (integrada) | 40-50 FPS em 720p | 10GB no SSD interno |
+| Steam Deck OLED | APU Zen 2 | 16GB unificada | RDNA 2 (integrada) | 45-55 FPS em 720p | 10GB no SSD interno |
+| Desktop econômico | i5 8400 | 16GB | GTX 1650 | 45-55 FPS no médio | 10GB em SATA SSD |
+| Desktop recomendado | i5 10400 | 16GB | RTX 3060 | 75-85 FPS no alto | 10GB em NVMe SSD |
+| Desktop de alta taxa | i5 12400 | 16GB | RTX 3060 Ti | 100-120 FPS no alto | 10GB em NVMe SSD |
+
+O piso de 16GB de RAM é o número mais importante para internalizar, porque ele elimina PCs de escritório antigos e notebooks pré-montados que vêm com 8GB. Combinar 16GB de DDR4 com até mesmo uma GTX 1650 modesta é suficiente para experimentar a campanha completa da Midnight Edition, o que é uma boa notícia para jogadores que já possuem um rig de gama média dos últimos anos. Para orientação estratégica mais ampla sobre como os níveis de especificação influenciam as escolhas de build, o [guia para iniciantes de Castlevania: Belmont's Curse](/en/guides/castlevania-belmont-s-curse-guide/) explica como o desempenho do sistema afeta a eficiência da coleta de relíquias.
+
+## Perguntas Frequentes
+
+**Castlevania: Belmont's Curse exige 16GB de RAM na especificação mínima?**
+
+Sim, o desenvolvedor lista 16GB de RAM em ambos os níveis, mínimo e recomendado, o que é incomumente generoso para um título de pixel art 2D. A margem é alocada para a galeria de arte digital, a galeria de som digital e o streaming de áudio em segundo plano durante lutas de chefes, então sistemas com 8GB são bloqueados no launcher. Se sua placa-mãe tiver dois slots DIMM livres, um kit 2x8GB DDR4 é a maneira mais barata de superar a barreira.
+
+**Uma GTX 1650 consegue rodar Castlevania: Belmont's Curse a 60 FPS?**
+
+Uma GTX 1650 consegue atingir 55-60 FPS em 900p no alto, mas cai para 45-55 FPS em 1080p nativo no médio porque os 4GB de VRAM da placa são o gargalo. As correntes de whip-cancel limitadas pela CPU e as janelas de rajada de Arcana permanecem suaves, mas a arena do chefe da Catedral dos Lírios pode cair para a casa dos 30 altos durante a sobreposição da névoa da maldição. Reduzir a escala de resolução para 85% é a maneira mais simples de travar 60 FPS em um monitor 1080p.
+
+**Castlevania: Belmont's Curse é verificado para Steam Deck?**
+
+O jogo ainda não foi oficialmente marcado como Verificado ou Jogável na loja da Steam, mas a memória unificada de 16GB e o perfil do motor 2D tornam uma classificação Jogável provável. Testes da comunidade sugerem 40-50 FPS em 720p no modelo LCD e 45-55 FPS no modelo OLED, ambos dentro do limite de Jogável da Valve. Até a Valve atualizar a loja, planeje ajustar a escala de resolução manualmente através da sobreposição do launcher do jogo.
+
+**Quanto armazenamento Castlevania: Belmont's Curse realmente usa após o Dia 1?**
+
+A instalação base é de 10GB, mas o patch do Dia 1 e a galeria de arte digital da Midnight Edition podem elevar a pegada em disco para 12-13GB. Jogadores que pularem o cache de texturas de alta resolução no launcher ficarão mais próximos de 10GB, enquanto completistas que habilitarem todos os assets opcionais ficarão em torno de 13GB. Um NVMe SSD é o meio recomendado porque o pré-carregamento da névoa da maldição e as cutscenes de introdução de chefes dependem de leituras aleatórias rápidas.
+
+**A RTX 3060 vai rodar o conteúdo da Midnight Edition suavemente?**
+
+Sim, a RTX 3060 é o nível recomendado e supera 75-85 FPS em 1080p no preset alto, o que está bem acima da meta de 60 FPS que o desenvolvedor otimizou. O buffer de quadro de 12GB GDDR6 deixa bastante margem para a galeria de arte digital e a camada de streaming de áudio, e o teto de 12GB garante nenhum engasgo durante janelas de rajada de Arcana. Se você possui um monitor 1440p, a placa ainda manterá 60-72 FPS no alto, o que corresponde ao potencial de 90Hz do Steam Deck OLED.

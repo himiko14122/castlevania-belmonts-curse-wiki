@@ -1,0 +1,12 @@
+name = "castlevania-belmonts-curse-wiki"
+main = "_worker.js"
+compatibility_date = "2025-01-01"
+
+[assets]
+directory = "./out"
+binding = "ASSETS"
+
+# Custom domains (castlevania-belmonts-curse.wiki + www.castlevania-belmonts-curse.wiki) were bound via
+# Cloudflare Workers Domains API (OAuth). wrangler 4.106 does not
+# support a [[domains]] top-level field, so the binding is managed through the API
+# (see deployer state records).

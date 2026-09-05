@@ -1,0 +1,187 @@
+export const metadata = {
+    id: "belmont-s-curse-joan-of-arc-strategy",
+    slug: "belmont-s-curse-joan-of-arc-strategy",
+    order: 4,
+    difficulty: "advanced",
+    title: "Castlevania: Belmont's Curse Estrategia y Fases de Joan of Arc",
+    description: "Domina la estrategia de Joan of Arc en Castlevania: Belmont's Curse con avisos de enfurecimiento, ventanas de vulnerabilidad y sincronización de parry para la prueba más difícil de Rose.",
+    keywords: ["estrategia de joan of arc en belmont's curse", "sincronización de parry de jefe en belmont's curse", "guía de esquiva de jefe en belmont's curse", "fase de enfurecimiento de jefe en belmont's curse", "ventana de vulnerabilidad de jefe en belmont's curse", "lista de niveles de jefes de belmont's curse"],
+    image: "/images/bosses/ibRD7Yd3CPI.webp",
+    video: "ibRD7Yd3CPI",
+    category: "bosses",
+    date: "2026-09-04",
+    lastModified: "2026-09-04"
+}
+
+## Por qué Joan of Arc es el muro obligatorio más difícil de Rose en Belmont's Curse
+
+Joan of Arc es la santa convertida en centinela opcional que bloquea el progreso de Rose en la fase final del juego, y su encuentro castiga los mismos hábitos descuidados que te llevaron a través de Death y Medusa. Según la [página oficial de Castlevania: Belmont's Curse en Steam](https://store.steampowered.com/app/4231820/Castlevania_Belmonts_Curse/), el título de acción y exploración 2D de Konami, Evil Empire y Motion Twin superpone una escalada de tres fases a cada enemigo "sagrado", por lo que la pelea contra Joan of Arc se siente menos como una comprobación de estadísticas y más como un examen de sincronización. Los jugadores que ya han superado [la lista más amplia de jefes de Castlevania: Belmont's Curse](/en/bosses/castlevania-belmont-s-curse-bosses/) saben que la curva se vuelve empinada alrededor de la Catedral de la Llama, y Joan of Arc es el punto de control que decide si tu build sobrevive a la segunda mitad de la ruta.
+
+Esta guía desglosa sus guiones de ataque, sus animaciones de aviso, las ventanas de parry que realmente te recompensan con una apertura de vulnerabilidad, y la configuración de Arcana que convierte una lucha de diez muertes en una victoria limpia de tres ciclos. La pelea combina lecturas de parry precisas con acertijos de posicionamiento, y la fase de enfurecimiento reconfigura todo el patrón, así que entrar con memoria muscular de Carmilla te hará morir.
+
+## Resumen del jefe Joan of Arc, contexto de la historia y mapa de fases
+
+Joan of Arc es uno de los jefes opcionales con nombre que aparecen en [la lista de jefes opcionales de Castlevania: Belmont's Curse](/en/bosses/castlevania-belmont-s-curse-optional-bosses/), ubicado junto a Isaac y The Fallen como una prueba de final de juego. Su arena es una nave de catedral larga y plana con tres plataformas elevadas y un suelo consagrado que brilla más intensamente a medida que su salud disminuye, señalando la inminente fase de enfurecimiento. La pelea se desarrolla a lo largo de tres fases distintas, cada una con su propio conjunto de ataques, y la ventana de vulnerabilidad se reduce en cada ciclo si fallas tus parrys.
+
+### Fase 1 — Vanguardia Consagrada (100% a 66% de PV)
+
+La fase inicial se basa en barridos horizontales amplios, estocadas verticales lentas y un lanzamiento de lanza a lo largo de la pantalla que te enseña la sincronización de su movimiento de preparación. Joan of Arc abre cada combo con una inclinación de hombro de medio segundo, y esa inclinación es el único aviso que recibes para la primera ventana de vulnerabilidad. Las pruebas de la comunidad compartidas en los informes de Discord de acceso anticipado reportan una ventana de parry consistente de 7 fotogramas después de la inclinación del hombro, lo que coincide con los datos de fotogramas que los jugadores han extraído del muñeco de parry en la sala de entrenamiento.
+
+| Ataque de Fase 1 | Aviso de Preparación | Fotogramas Activos | Ventana de Parry | Esquiva Recomendada |
+|----------------|--------------|---------------|--------------|-------------------|
+| Barrido Horizontal | Inclinación de hombro, el arma retrocede 90° | 18 | 7 | Retroceso y castigo |
+| Estocada Vertical | Arma elevada sobre la cabeza, postura ampliada | 22 | 6 | Paso lateral y castigo con látigo |
+| Lanzamiento de Lanza | Brazo hacia atrás, brilla en blanco | 30 | 4 | Agacharse bajo el arco, responder con cruz |
+| Pulso Sagrado | Pisa una vez, anillo se expande hacia afuera | 14 | 0 (imposible de parar) | Saltar sobre el anillo |
+| Golpe de Carga | Se agacha, se desliza 3 casillas | 20 | 5 | Doble retroceso, esperar la recuperación |
+
+El Pulso Sagrado es el único ataque que no puedes parar en la fase 1, y es la primera prueba real de esquiva de la pelea. Trátalo como un reinicio de posicionamiento: la caja de golpes del anillo es exactamente de dos casillas, así que un solo salto desde la plataforma central lo esquiva limpiamente. Según los datos de la comunidad recopilados durante la reciente rama beta, los jugadores que mueren primero en esta fase casi siempre pierden contra el lanzamiento de lanza porque intentaron parar una ventana de 4 fotogramas sin antes almacenar la entrada en el aviso.
+
+### Fase 2 — Llama Purificadora (66% a 33% de PV)
+
+Una vez que Joan of Arc alcanza el 66% de PV, las baldosas del suelo se incendian y la arena gana un campo de daño por tiempo que hace tic una vez por segundo. Su conjunto de ataques se expande con dos movimientos nuevos — una columna de llamas en su posición y una onda de suelo consagrado que barre el área — y sus ventanas de parry se reducen en 2 fotogramas en general. La nueva ventana de vulnerabilidad después de un parry exitoso crece de 12 fotogramas a 18 fotogramas porque el equipo de desarrollo quería que la segunda fase recompensara la agresión comprometida, pero solo si puedes sobrevivir al daño del suelo.
+
+La mecánica nueva más importante en la fase 2 es el reinicio de la ventana de vulnerabilidad. Cuando paras un golpe de columna de llamas, Joan of Arc queda bloqueada en un tambaleo de 24 fotogramas que puede encadenar en un ataque pesado gratuito del Vampire Killer de Rose. El pesado de pie del látigo falla si estás demasiado cerca, así que el castigo óptimo es un solo pesado con cancelación de salto que aterriza a máxima distancia, lo que alinea el segundo golpe con el último fotograma del tambaleo.
+
+### Fase 3 — Enfurecimiento de Martirio (33% de PV o menos)
+
+La fase de enfurecimiento es la verdadera prueba de tu plan de fase de enfurecimiento de jefe de belmont's curse. Al 33% de PV, Joan of Arc brilla en dorado, sus avisos desaparecen en el primer ataque de cada combo, y gana una nova sagrada que borra toda la arena cada 45 segundos. La nova sagrada se anuncia con un solo sonido de campana, por lo que el uso de señales de audio es obligatorio. La ventana de vulnerabilidad después de un parry en la fase 3 vuelve a ser de 12 fotogramas, pero la animación de tambaleo es más corta, así que obtienes exactamente un ataque ligero gratuito antes de tener que reiniciar el posicionamiento.
+
+La regla de supervivencia crítica para la fase de enfurecimiento es la sincronización. El enfriamiento de 45 segundos de la nova significa que tienes espacio para dos ciclos de ataque completos entre cada explosión, lo que es justo suficiente para desgastarla si estás aterrizando parrys. Los jugadores que ignoran el temporizador y se extienden demasiado reciben la nova a PV completo y pierden la partida.
+
+## Sincronización de parry y lecturas de esquiva para cada ataque de Joan of Arc
+
+La sincronización de parry para Joan of Arc se basa en sus rupturas de postura, y la ventana es siempre la misma independientemente del ataque que siga. Siempre que leas correctamente la inclinación del hombro, una entrada de parry almacenada atrapará los fotogramas activos. Las pruebas de la comunidad confirman que la ventana de almacenamiento de entrada es de 9 fotogramas, lo que te da un pequeño margen para la latencia si juegas en línea o transmites a través de juego remoto.
+
+### Tabla de referencia de sincronización de parry
+
+| Tipo de Ataque | Fase Disponible | Almacenamiento de Entrada de Parry | Recuperación Después del Parry | Ventana de Daño de Castigo |
+|-------------|-----------------|--------------------|-----------------------|-----------------------|
+| Ataques de barrido | 1, 2, 3 | 9 fotogramas antes del impacto | 14 fotogramas | Vulnerabilidad de 12 fotogramas |
+| Ataques de estocada | 1, 2, 3 | 7 fotogramas antes del impacto | 12 fotogramas | Vulnerabilidad de 10 fotogramas |
+| Lanzamiento de lanza | 1, 2 | 5 fotogramas antes del impacto | 10 fotogramas | Vulnerabilidad de 8 fotogramas |
+| Columna de llamas | 2, 3 | 6 fotogramas antes del impacto | 24 fotogramas | Vulnerabilidad de 18 fotogramas |
+| Golpe de carga | 1, 2, 3 | 8 fotogramas antes del impacto | 16 fotogramas | Vulnerabilidad de 14 fotogramas |
+| Nova sagrada | 3 (enfurecimiento) | No se puede parar | N/A | Esquivar a la zona segura |
+
+Para el enfoque de entrenamiento de [sincronización de parry de jefe de belmont's curse](/en/bosses/how-to-beat-joan-of-arc-belmont-s-curse/), el muñeco de parry en la antesala de la Catedral solo imita la sincronización del barrido, por lo que es útil para calentar pero no te prepara para el lanzamiento de lanza. El lanzamiento de lanza tiene una preparación única en la que Joan echa el brazo completamente hacia atrás y la lanza brilla en blanco, y la ventana de parry de 4 fotogramas es la más ajustada del juego fuera del combo encadenado de Carmilla.
+
+### Guía de esquiva para ataques imposibles de parar
+
+Dos ataques en la pelea contra Joan of Arc no se pueden parar, y el enfoque de la [guía de esquiva de jefe de belmont's curse](/en/bosses/castlevania-belmont-s-curse-bosses/) se basa en audio y posicionamiento en lugar de tiempo de reacción. El Pulso Sagrado en la fase 1 es un anillo de suelo que requiere un solo salto desde la plataforma central. La nova sagrada en la fase 3 es una explosión de pantalla completa que esquivas corriendo a la plataforma de la esquina más alejada de Joan, que es la única zona segura porque la explosión se expande desde su posición.
+
+| Movimiento Imposible de Parar | Fase | Método de Esquiva | Zona Segura |
+|------------------|-------|--------------|-----------|
+| Pulso Sagrado | 1, 2 | Salto único desde el centro | En cualquier lugar por encima del nivel del suelo |
+| Nova Sagrada | 3 | Correr a la plataforma de la esquina lejana | Esquina más alejada del jefe |
+| Escena de transición de fase | 1→2, 2→3 | Ventana de curación gratuita | Detrás del pilar (sin daño) |
+
+Las escenas de transición de fase son ventanas de curación gratuitas, y los jugadores hábiles las usan para recuperarse con una sola carga de Arcana. Según la [entrada de Wikipedia sobre Castlevania: Belmont's Curse](https://en.wikipedia.org/wiki/Castlevania:_Belmont%27s_Curse), el conjunto de herramientas de Rose se basa en encadenar ráfagas de Arcana en combos de látigo, por lo que la ventana de transición es la oportunidad más limpia para refrescar tu Arcana activa antes de que la presión de la siguiente fase aumente.
+
+## Configuración de Arcana, elección de arma y preparación previa a la pelea
+
+La mejor build para Joan of Arc es una configuración centrada en parry que maximice tu daño de castigo por tambaleo. La [lista de niveles de Arcana de Castlevania: Belmont's Curse](/en/arcana/castlevania-belmont-s-curse-boss-arcana/) recomienda combinar una Arcana de daño con una defensiva, porque la fase de enfurecimiento agotará tus recursos de curación si juegas puramente ofensivo.
+
+| Ranura de Arcana | Carta Recomendada | Efecto en la Pelea contra Joan of Arc |
+|-------------|------------------|------------------------------|
+| Principal | La Torre | +20% de daño a jefes tambaleados durante 8 segundos |
+| Secundaria | La Estrella | Cura 15% de PV en parry exitoso (se acumula 3 veces) |
+| Terciaria | El Colgado | Ralentiza el movimiento del jefe un 10% durante la fase 3 |
+| Opcional | El Carro | Gana 1.5× fotogramas de invencibilidad después de esquivar |
+
+La Torre es la carta más importante en la ranura porque la ventana de daño de 8 segundos se alinea perfectamente con el castigo de parry de 18 fotogramas en la fase 2. La Estrella te mantiene con vida a través de los tics de daño del suelo en la fase 2, y El Colgado te da espacio para respirar durante la fase de enfurecimiento cuando sus combos se aceleran. El Carro es una elección de lujo que ayuda si todavía estás aprendiendo las ventanas de esquiva, pero los jugadores experimentados lo cambian por una carta de daño como El Sol.
+
+Para la selección de armas, la [lista de niveles de armas de Castlevania: Belmont's Curse](/en/weapons/castlevania-belmont-s-curse-weapon-tier-list/) clasifica al Vampire Killer como la opción de daño sostenido más fuerte para esta pelea, pero la Espada Bendita se adelanta en la fase 3 debido a su bonificación de daño sagrado. Elige el arma que coincida con tu consistencia de parry — si aterrizas el 70% o más de tus parrys, el mayor daño base del Vampire Killer gana; si todavía estás aprendiendo las ventanas, la caja de golpes más indulgente de la Espada Bendita es la opción más segura.
+
+## Desglose de la fase de daño y ruta de ataque óptima
+
+La victoria limpia de tres ciclos contra Joan of Arc requiere una ruta de daño específica que aproveche las ventanas de parry de cada fase. El ciclo 1 cubre la fase 1 solo con ataques ligeros, el ciclo 2 desgasta la fase 2 con castigos de parry con La Torre activa, y el ciclo 3 corre contra el temporizador de la nova sagrada a través de la fase 3. Los jugadores que intentan saltarse ciclos comprometiéndose en exceso en la fase 1 casi siempre mueren en la fase de enfurecimiento porque entran sin cargas de Arcana restantes.
+
+### Plan de daño de la Fase 1
+
+- Aterriza 3 barridos, castiga cada uno con 2 golpes de látigo ligeros (6 golpes en total por ciclo)
+
+- Aterriza 1 estocada, castiga con 1 pesado con cancelación de salto
+
+- Evita el lanzamiento de lanza para daño; úsalo como un reinicio gratuito del ciclo de esquiva
+
+- Termina la fase 1 al 66% de PV con PV completo y al menos 2 cargas de Arcana
+
+### Plan de daño de la Fase 2
+
+- Abre con la Arcana de La Torre antes de involucrarte
+
+- Para 2 columnas de llamas, castiga cada una con pesado completo con cancelación de salto + 2 golpes ligeros
+
+- Usa el daño del suelo a tu favor jugando agresivamente y curándote con las acumulaciones de la Arcana de La Estrella
+
+- Salta la onda de suelo consagrado por completo; no vale la pena el reinicio de posicionamiento
+
+### Plan de daño de la Fase 3
+
+- Activa El Colgado inmediatamente
+
+- Para en cada enfriamiento, castiga con golpes ligeros individuales para maximizar el daño por segundo
+
+- Rastrea el temporizador de la nova de 45 segundos; reinicia a la esquina 5 segundos antes de cada explosión
+
+- No te comprometas en exceso con los castigos de golpe de carga; la recuperación es demasiado larga y la nova te atrapará
+
+| Fase | Objetivo del Ciclo | Daño por Ciclo | Cargas de Arcana Usadas | Presupuesto de Tiempo |
+|-------|------------|------------------|---------------------|-------------|
+| 1 | 100% → 66% | ~6,200 PV | 0 (o 1 por seguridad) | 90 segundos |
+| 2 | 66% → 33% | ~8,400 PV (con La Torre) | 1 Torre + 1-2 acumulaciones de Estrella | 110 segundos |
+| 3 | 33% → 0% | ~6,000 PV | 1 Colgado | 90 segundos (2 ciclos de nova) |
+
+Esta ruta asume que estás usando el Vampire Killer con todas las mejoras, y los números provienen de una calculadora de daño dirigida por la comunidad compartida en el hilo de optimización de partidas. El presupuesto de tiempo de 90 segundos para la fase 1 incluye la escena inicial, por lo que el reloj de combate real es más cercano a 70 segundos.
+
+## Errores comunes que te matan en la fase de enfurecimiento
+
+La fase de enfurecimiento castiga la codicia por encima de todo, y la mayoría de las muertes al 33% de PV son causadas por uno de cuatro errores comunes. Los jugadores que superan la fase de enfurecimiento de manera consistente la tratan primero como una fase de supervivencia y segundo como una fase de daño, lo que suena contradictorio pero coincide con la intención del diseño.
+
+| Error | Por qué te Mata | Solución |
+|---------|------------------|-----|
+| Perseguir castigos de golpe de carga | Recuperación de 16 fotogramas, la nova te atrapa a los 38 segundos | Castiga con un solo golpe ligero, reinicia |
+| Permanecer en la plataforma central | El daño del suelo hace tic mientras esperas los avisos | Abraza el pilar más cercano a tu objetivo de parry |
+| Olvidar el temporizador de 45 segundos | La nova borra el PV completo | Configura un temporizador visual en tu HUD |
+| Quemar toda la Arcana en la fase 2 | Sin curación para el daño del suelo de la fase 3 | Guarda 1 acumulación de Estrella para el enfurecimiento |
+| Rodar en pánico a través de los avisos | El rodar cancela tu entrada de parry | Quédate quieto, para en la inclinación |
+
+El mayor asesino individual en la fase de enfurecimiento es el rodar en pánico, porque cancela tu almacenamiento de entrada de parry. Las animaciones de aviso de Joan of Arc están diseñadas para provocar rodadas porque se ven similares al inicio de su golpe de carga, y el equipo de desarrollo confirmó en el Discord oficial de Belmont's Curse que los avisos son intencionalmente ambiguos para recompensar el reconocimiento de patrones sobre la velocidad de reacción.
+
+## Cómo se compara Joan of Arc con otros jefes de final de juego
+
+Dentro de la conversación más amplia de la [lista de niveles de jefes de belmont's curse](/en/bosses/castlevania-belmont-s-curse-bosses/), Joan of Arc se sitúa en la cima de la curva obligatoria de final de juego porque su fase de enfurecimiento es mecánicamente distinta de todos los demás jefes del juego. Carmilla tiene un temporizador de enfurecimiento similar, pero el enfurecimiento de Carmilla es un aumento de daño en lugar de una eliminación completa de la arena, por lo que la mecánica de nova de Joan of Arc es el verdadero pico de dificultad. Death castiga el posicionamiento, y Medusa castiga la codicia, pero Joan of Arc castiga ambos a la vez.
+
+| Jefe | Dificultad (1-10) | Modo de Falla Principal | Estrechez de la Ventana de Parry | Castigo del Enfurecimiento |
+|------|-------------------|----------------------|------------------------|-------------------|
+| Death | 7 | Posicionamiento | 8 fotogramas | +50% de daño |
+| Medusa | 6 | Codicia | 10 fotogramas | Mirada petrificante |
+| Carmilla | 8 | Seguimiento de combos | 6 fotogramas | +75% de daño |
+| Joan of Arc | 9 | Sincronización + supervivencia | 4-7 fotogramas | Nova de arena completa |
+| Isaac | 9 | Superposición de fases | 6 fotogramas | Reinicio de fase 2 |
+| The Fallen | 10 | Reconocimiento de patrones | 3 fotogramas | Velocidad de ataque duplicada |
+
+Según los materiales de prensa oficiales de Konami, el [sitio web oficial de Castlevania: Belmont's Curse](https://www.konami.com/games/castlevania/belmonts_curse/us/en-us/) enumera a Joan of Arc como un encuentro de "prueba de fe", que es una pista de texto de sabor que indica que la pelea está destinada a bloquear la mazmorra posterior al juego. Si no puedes superarla con menos de 5 muertes, el contenido posterior al juego será brutal porque cada jefe posterior asume que has dominado sus ventanas de parry.
+
+## Preguntas Frecuentes
+
+**¿Cuál es la mejor configuración de Arcana para la pelea contra Joan of Arc en Belmont's Curse?**
+
+La configuración más fuerte es **La Torre** como principal por el 20% de daño a jefes tambaleados, **La Estrella** para la curación por parry a través de los tics del suelo de la fase 2, y **El Colgado** para ralentizarla durante la fase de enfurecimiento. Este trío cubre daño, curación y control de masas, y deja una ranura opcional abierta para **El Carro** si todavía estás aprendiendo las ventanas de esquiva.
+
+**¿Qué tan ajustada es la ventana de parry para el lanzamiento de lanza de Joan of Arc?**
+
+La ventana de parry del lanzamiento de lanza es de 4 fotogramas, lo que la convierte en la más ajustada del encuentro contra Joan of Arc y la segunda más ajustada de todo el juego fuera del combo encadenado de Carmilla. El almacenamiento de entrada es de 9 fotogramas antes del impacto, por lo que puedes parar el lanzamiento de lanza de manera confiable si comienzas la entrada en el aviso de brillo blanco, que aparece unos 30 fotogramas antes de la caja de golpes activa.
+
+**¿Puedes saltarte al jefe Joan of Arc en Castlevania: Belmont's Curse?**
+
+No, Joan of Arc es un encuentro obligatorio para el final de la Catedral de la Llama, aunque su sala física está técnicamente etiquetada como opcional en la pantalla de selección de jefes. Saltártela significa que no puedes acceder a la mazmorra posterior al juego, y quedarás bloqueado de la secuencia de créditos del final verdadero que desbloquea el Disfraz de Estilo Alucard para Rose.
+
+**¿Cuál es el temporizador de la nova sagrada en la fase de enfurecimiento de Joan of Arc?**
+
+La nova sagrada se dispara cada 45 segundos en la fase 3, y cubre toda la arena excepto la plataforma de la esquina más alejada de Joan of Arc. Según los datos de la comunidad, el temporizador comienza en el primer fotograma de la escena de enfurecimiento, por lo que tienes exactamente dos ciclos de ataque entre cada nova si juegas a máximo ritmo.
+
+**¿Cómo se compara la pelea contra Joan of Arc con Isaac en términos de dificultad?**
+
+Joan of Arc está clasificada como ligeramente más fácil que Isaac en la escala de dificultad de la comunidad porque la mecánica de reinicio de fase 2 de Isaac obliga a quemar una curación completa, mientras que el enfurecimiento de Joan of Arc solo requiere disciplina de posicionamiento. Ambas peleas exigen una ejecución de parry precisa, pero Joan of Arc te da más ventanas de recuperación entre sus combos, lo que la convierte en la mejor pelea de entrenamiento para jugadores nuevos que quieren aprender la sincronización del enfurecimiento antes de intentar contra Isaac.
